@@ -4,8 +4,8 @@ defmodule Opengraph.Mixfile do
   def project do
     [
       app: :opengraph,
-      version: "0.1.0",
-      elixir: "~> 1.3",
+      version: "0.2.0",
+      elixir: "~> 1.9",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       deps: deps(),
@@ -31,9 +31,9 @@ defmodule Opengraph.Mixfile do
 
   defp deps do
     [
-      {:httpoison, "~> 0.10.0"},
-      {:floki, "~> 0.11.0"},
-      {:mock, "~> 0.2.0", only: :test},
+      {:httpoison, "~> 1.5.1"},
+      {:floki, "~> 0.22.0"},
+      {:mock, "~> 0.3.3", only: :test},
       {:ex_doc, ">= 0.0.0", only: :dev},
     ]
   end

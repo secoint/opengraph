@@ -21,7 +21,7 @@ iex(2)>
 
 ```elixir
 def deps do
-  [{:opengraph, "~> 0.1.0"}]
+  [{:opengraph, "~> 0.2.0"}]
 end
 ```
 
